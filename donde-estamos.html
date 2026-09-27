@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estamos en Madrid, Barcelona, Zaragoza y Bilbao. Consulta nuestras oficinas y solicita tu certificado energético.">
+  <meta name="theme-color" content="#0369a1">
+  <title>Dónde estamos · CertiSol</title>
+  <link rel="icon" href="assets/favicon.svg?v=certisolblue" type="image/svg+xml">
+  <link rel="preload" href="assets/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=certisolblue2">
+  <script src="config.js?v=certisol2" defer></script>
+  <script src="app.js?v=891c82946075" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="CertiSol, inicio"><img src="assets/logo.webp?v=certisolblue" alt="CertiSol" width="174" height="42"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <nav id="main-nav" aria-label="Navegación principal">
+        <a href="donde-estamos.html" aria-current="page">Dónde estamos</a><a href="index.html#equipo">Equipo</a><a href="index.html#contacto">Contacto</a><a href="index.html#blog">Blog</a><a href="index.html#servicios">Servicios</a>
+        <a class="button button-small" href="index.html#contacto">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="section page-intro">
+      <div class="container narrow">
+        <p class="eyebrow">Nuestras oficinas</p>
+        <h1>¿Dónde <span>estamos</span>?</h1>
+        <p class="section-intro">En <strong>CertiSol</strong> queremos ayudarte a mejorar la eficiencia energética de tu vivienda, por ello <strong>contamos con equipo en las principales ciudades españolas</strong> y cada año seguimos creciendo.</p>
+      </div>
+    </section>
+
+    <section class="section cities-section">
+      <div class="container">
+        <div class="cities">
+          <a class="city-card" href="index.html#contacto">
+            <h2>Madrid</h2>
+            <p>José Abascal 22,<br>28003</p>
+          </a>
+          <a class="city-card" href="index.html#contacto">
+            <h2>Barcelona</h2>
+            <p>Paris 182,<br>08036</p>
+          </a>
+          <a class="city-card" href="index.html#contacto">
+            <h2>Zaragoza</h2>
+            <p>Jose Luís Albareda 6,<br>50004</p>
+          </a>
+          <a class="city-card" href="index.html#contacto">
+            <h2>Bilbao</h2>
+            <p>Avenida Basagoiti 3,<br>48992</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container two-columns">
+        <div class="contact-copy">
+          <p class="eyebrow">Fácil, rápido y sin complicaciones</p>
+          <h2>Solicita ya tu<br><span>Certificado Energético</span></h2>
+          <ul class="check-list"><li>Gestionamos todo el proceso, incluido el registro en tu Comunidad Autónoma</li><li>Tu certificado en 24/48 horas</li><li>Equipo de expertos que resolverán todas tus dudas</li></ul>
+          <div class="contact-methods">
+            <div><span class="round-icon" aria-hidden="true">☎</span><p>Llámanos<a data-phone href="tel:+34660756552">660 75 65 52</a></p></div>
+            <div><span class="round-icon" aria-hidden="true">↗</span><p>Escríbenos<a data-whatsapp href="https://wa.me/34660756552" target="_blank" rel="noopener">WhatsApp</a></p></div>
+          </div>
+          <a class="button button-dark" data-booking href="https://citas.certisol.com/" target="_blank" rel="noopener">Reserva tu cita online <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-form-card">
+          <h3>O si lo prefieres,<br>nosotros te llamamos:</h3>
+          <form id="contact-form">
+            <div class="form-row"><div><label for="name">Nombre *</label><input id="name" name="nombre" autocomplete="name" required placeholder="Tu nombre" maxlength="120"></div><div><label for="phone">Teléfono *</label><input id="phone" name="telefono" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{7,20}" placeholder="Tu teléfono" maxlength="20"></div></div>
+            <div class="form-row"><div><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="Tu email" maxlength="200"></div><div><label for="contact-postal">Código postal *</label><input id="contact-postal" name="codigo_postal" inputmode="numeric" autocomplete="postal-code" required pattern="[0-9]{5}" maxlength="5" placeholder="Código postal"></div></div>
+            <label for="message">Comentarios</label><textarea id="message" name="comentarios" rows="3" maxlength="2000" placeholder="Cuéntanos qué necesitas"></textarea>
+            <label class="checkbox-label"><input type="checkbox" name="privacidad" required><span>He leído la <a href="privacidad.html">información de privacidad</a> y acepto que me contacten para atender mi solicitud.</span></label>
+            <button id="contact-submit" type="submit" class="button">Preparar email <span aria-hidden="true">→</span></button>
+            <p id="form-help" class="form-help">Se abrirá tu aplicación de correo con la solicitud preparada. Tú decides cuándo enviarla.</p>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="./"><img src="assets/logo.webp?v=certisolblue" alt="CertiSol, inicio" width="174" height="42" loading="lazy"></a><p>Tu certificado energético,<br>de forma cómoda y sencilla.</p><a data-email href="mailto:certificadosysoluciones@gmail.com">certificadosysoluciones@gmail.com</a><a data-phone href="tel:+34660756552">660 75 65 52</a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> CertiSol</span><a href="privacidad.html">Privacidad y cookies</a><a href="#contenido">Volver arriba ↑</a></div></footer>
+  <a class="whatsapp-float" data-whatsapp href="https://wa.me/34660756552" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M27 15.5A11 11 0 0 1 10.3 25L4 27l2-6.2A11 11 0 1 1 27 15.5Z"/><path d="M12 10c-3 2 1 9 6 10 2 .4 3-2 2-3l-3-1-1 1-3-3 1-1-2-3Z"/></svg></a>
+</body>
+</html>
