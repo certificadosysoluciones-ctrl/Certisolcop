@@ -1,6 +1,6 @@
-# CertiGO — web lista para GitHub Pages
+# CertiSol — web lista para GitHub Pages
 
-Versión estática de la portada de CertiGO, con secciones de equipo, contacto, servicios, preguntas frecuentes y blog. Incluye calculadora de precios, menú móvil y una página informativa de privacidad. No necesita instalación, compilación ni dependencias: los archivos se publican tal cual.
+Versión estática de la portada de CertiSol, con secciones de equipo, contacto, servicios, preguntas frecuentes y blog. Incluye calculadora de precios, menú móvil y una página informativa de privacidad. No necesita instalación, compilación ni dependencias: los archivos se publican tal cual.
 
 Puedes abrir `index.html` directamente en el navegador para verla antes de publicar.
 
@@ -39,7 +39,7 @@ Si prefieres recibir el formulario sin depender del correo del visitante, puedes
 
 ## Tarifas de la calculadora
 
-Los precios de `tarifas.js` son una copia fija de la [calculadora original](https://certi-go.com/widgets/calculadora_madrid_metros_CP_6_AB.html), consultada el 27-09-2026. Incluye 298 códigos postales. No se sincronizan ni se actualizan solos: modifica `tarifas.js` cuando cambien. La función de cálculo está en `app.js`.
+Los precios de `tarifas.js` son una copia fija de la [calculadora original](https://certisol.com/widgets/calculadora_madrid_metros_CP_6_AB.html), consultada el 27-09-2026. Incluye 298 códigos postales. No se sincronizan ni se actualizan solos: modifica `tarifas.js` cuando cambien. La función de cálculo está en `app.js`.
 
 Ejemplos comprobados: piso de 80 m² en 28001 → 70,20 €; piso de 80 m² en 28901 → 78,65 €, IVA incluido. Edificios completos y superficies de más de 350 m² muestran «Precio a consultar». Las superficies vacías, cero o negativas no producen presupuesto.
 
@@ -53,7 +53,7 @@ Los enlaces al blog apuntan a los articulos originales. Se pueden sustituir por 
 
 ## Contenido y marca
 
-Se han conservado la marca, imágenes y datos públicos de CertiGO como referencia solicitada. Los teléfonos, WhatsApp, correo, reservas y blog apuntan actualmente a CertiGO. Si la web es para otro negocio, sustituye esos datos, los testimonios, los textos, las imágenes y el logotipo antes de publicarla.
+Se han conservado la marca, imágenes y datos públicos de CertiSol como referencia solicitada. Los teléfonos, WhatsApp, correo, reservas y blog apuntan actualmente a CertiSol. Si la web es para otro negocio, sustituye esos datos, los testimonios, los textos, las imágenes y el logotipo antes de publicarla.
 
 Las imágenes y la fuente están incluidas en `assets/`: no se descargan desde WordPress cuando alguien visita esta web. La estructura se ha reconstruido en HTML/CSS/JavaScript; no es una exportación del WordPress ni de su base de datos. El mapa abre un enlace externo, y los artículos completos y el sistema de citas permanecen en la web original.
 

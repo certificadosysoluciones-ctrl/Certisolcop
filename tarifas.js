@@ -1,5 +1,5 @@
 /* Copia de las tarifas públicas consultadas el 27-09-2026.
- * Fuente: https://certi-go.com/widgets/calculadora_madrid_metros_CP_6_AB.html
+ * Fuente: https://certisol.com/widgets/calculadora_madrid_metros_CP_6_AB.html
  * Sin sincronización automática. Los importes se conservan tal como figuran en la fuente.
  */
 window.tarifas = {
