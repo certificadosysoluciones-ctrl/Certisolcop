@@ -45,7 +45,8 @@
     const band = rates.tramos.find(tramo => area <= tramo.hasta);
     if (!band) return { status: 'consult' };
     const surcharge = rates.cp[cp];
-    const raw = (rates.base[type] + band.extra + surcharge + (surcharge === 0 ? band.ciudad : 0)) * rates.iva;
+    const descuento = 5;
+    const raw = (rates.base[type] + band.extra + surcharge + (surcharge === 0 ? band.ciudad : 0)) * rates.iva - descuento;
     return { status: 'price', total: Number(raw.toFixed(2)) };
   }
   window.calculateQuote = calculateQuote;

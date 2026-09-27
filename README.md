@@ -41,7 +41,7 @@ Si prefieres recibir el formulario sin depender del correo del visitante, puedes
 
 Los precios de `tarifas.js` son una copia fija de la [calculadora original](https://certisol.com/widgets/calculadora_madrid_metros_CP_6_AB.html), consultada el 27-09-2026. Incluye 298 códigos postales. No se sincronizan ni se actualizan solos: modifica `tarifas.js` cuando cambien. La función de cálculo está en `app.js`.
 
-Ejemplos comprobados: piso de 80 m² en 28001 → 70,20 €; piso de 80 m² en 28901 → 78,65 €, IVA incluido. Edificios completos y superficies de más de 350 m² muestran «Precio a consultar». Las superficies vacías, cero o negativas no producen presupuesto.
+Ejemplos comprobados: piso de 80 m² en 28001 → 65,20 €; piso de 80 m² en 28901 → 73,65 €, IVA incluido. El precio final lleva aplicado un descuento de 5 € (constante `descuento` en `app.js`). Edificios completos y superficies de más de 350 m² muestran «Precio a consultar». Las superficies vacías, cero o negativas no producen presupuesto.
 
 ## Agenda
 
