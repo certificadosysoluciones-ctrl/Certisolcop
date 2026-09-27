@@ -43,7 +43,7 @@
   </header>
   <main id="contenido">
     <section class="hero">
-      <div class="container">
+      <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Tu <span>Certificado Energético</span> en Zaragoza en 24h y al mejor precio</h1>
           <ul class="hero-list">
@@ -55,6 +55,22 @@
           </ul>
           <a class="button" href="#contacto">Solicita tu certificado <span aria-hidden="true">→</span></a>
           <p class="hero-note">Presupuesto cerrado sin sorpresas. IVA y registro incluidos.</p>
+        </div>
+        <div class="calculator" id="calculadora">
+          <h2>Calcula el precio de tu certificado</h2>
+          <form id="price-form">
+            <label for="property-type">Tipo de inmueble:</label>
+            <select id="property-type" name="tipo"><option value="piso">Piso</option><option value="chalet">Chalet</option><option value="local">Local</option><option value="oficina">Oficina</option><option value="edificio">Edificio completo</option></select>
+            <label for="area">Superficie del inmueble (m²):</label>
+            <input id="area" name="metros" type="number" inputmode="decimal" min="1" step="any" placeholder="Introduce los m²" aria-describedby="price-error">
+            <label for="postal-code">Código postal:</label>
+            <input id="postal-code" name="cp" type="text" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" placeholder="Introduce tu código postal" aria-describedby="price-error">
+            <p id="price-error" class="field-error" role="status"></p>
+            <div class="price-output" aria-live="polite" aria-atomic="true"><span>Precio total IVA incluido</span><strong id="price">—</strong></div>
+            <a href="#contacto" id="price-cta" class="button button-full">Solicitar mi certificado <span aria-hidden="true">→</span></a>
+            <p class="calculator-foot">Visita presencial · Registro incluido · Sin sorpresas</p>
+          </form>
+          <noscript><p>Activa JavaScript para calcular tu precio o <a href="tel:+34660756552">llámanos</a>.</p></noscript>
         </div>
       </div>
     </section>
