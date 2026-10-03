@@ -36,7 +36,6 @@
     const cp = String(cpInput).trim();
     if (!cp) return { status: 'empty' };
     if (!/^\d{5}$/.test(cp)) return { status: 'invalid', message: 'Introduce un código postal de 5 cifras.' };
-    if (!Object.prototype.hasOwnProperty.call(rates.cp, cp)) return { status: 'outside', message: 'Consulta con nosotros el precio para esta zona.' };
     if (type === 'edificio') return { status: 'consult' };
     if (!Object.prototype.hasOwnProperty.call(rates.base, type)) return { status: 'invalid', message: 'Selecciona un tipo de inmueble.' };
     if (String(areaInput).trim() === '') return { status: 'empty' };
@@ -44,9 +43,10 @@
     if (!Number.isFinite(area) || area <= 0) return { status: 'invalid', message: 'Introduce una superficie mayor que cero.' };
     const band = rates.tramos.find(tramo => area <= tramo.hasta);
     if (!band) return { status: 'consult' };
-    const surcharge = rates.cp[cp];
+    const known = Object.prototype.hasOwnProperty.call(rates.cp, cp);
+    const surcharge = known ? rates.cp[cp] : 0;
     const descuento = 5;
-    const raw = (rates.base[type] + band.extra + surcharge + (surcharge === 0 ? band.ciudad : 0)) * rates.iva - descuento;
+    const raw = (rates.base[type] + band.extra + surcharge + (known && surcharge === 0 ? band.ciudad : 0)) * rates.iva - descuento;
     return { status: 'price', total: Number(raw.toFixed(2)) };
   }
   window.calculateQuote = calculateQuote;
