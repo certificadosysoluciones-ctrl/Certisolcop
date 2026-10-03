@@ -97,6 +97,7 @@
     status.replaceChildren();
     status.classList.remove('error');
     const data = new FormData(form);
+    if (config.formAccessKey) data.append('access_key', config.formAccessKey);
     if (!config.formEndpoint) {
       const body = `Hola, me gustaría solicitar información.\n\nNombre: ${data.get('nombre')}\nTeléfono: ${data.get('telefono')}\nEmail: ${data.get('email')}\nCódigo postal: ${data.get('codigo_postal')}\n\n${data.get('comentarios') || ''}\n\nHe leído la información de privacidad y solicito que me contacten.`;
       const link = document.createElement('a');

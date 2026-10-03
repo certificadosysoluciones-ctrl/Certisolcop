@@ -7,6 +7,9 @@ window.siteConfig = {
   address: 'Jose Luís Albareda 6, 50004 Zaragoza',
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Jose+Luis+Albareda+6+Zaragoza',
   bookingUrl: 'https://citas.certisol.com/?origen=web-github',
-  // Opcional: URL pública de un formulario Formspree. Nunca pongas claves privadas aquí.
-  formEndpoint: ''
+  // Servicio que envía el formulario a tu email. Si está vacío, se prepara un email (mailto).
+  // Ej. Web3Forms: formEndpoint: 'https://api.web3forms.com/submit', formAccessKey: 'tu-clave'
+  // Ej. Formspree: formEndpoint: 'https://formspree.io/f/tu-id', formAccessKey: ''
+  formEndpoint: 'https://api.web3forms.com/submit',
+  formAccessKey: 'cafe5013-ebd5-4b58-ad0d-65ba7257a81b'
 };
