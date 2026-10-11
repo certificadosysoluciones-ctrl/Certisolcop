@@ -1,0 +1,9 @@
+# Archivos temporales de Office/Excel
+~$*
+*.tmp
+*.xlsx
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
