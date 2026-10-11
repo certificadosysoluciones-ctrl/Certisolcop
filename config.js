@@ -11,5 +11,8 @@ window.siteConfig = {
   // Ej. Web3Forms: formEndpoint: 'https://api.web3forms.com/submit', formAccessKey: 'tu-clave'
   // Ej. Formspree: formEndpoint: 'https://formspree.io/f/tu-id', formAccessKey: ''
   formEndpoint: 'https://api.web3forms.com/submit',
-  formAccessKey: 'cafe5013-ebd5-4b58-ad0d-65ba7257a81b'
+  formAccessKey: 'cafe5013-ebd5-4b58-ad0d-65ba7257a81b',
+  // Etiqueta de conversion de Google Ads para el envio del formulario.
+  // Ejemplo: 'AW-18492467371/AbC-D_efG'
+  conversionSendTo: 'AW-18492467371/oiHgCJ6mpZkdEKvR8vFE'
 };

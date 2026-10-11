@@ -119,6 +119,7 @@
       const response = await fetch(endpoint.href, { method: 'POST', body: data, headers: { Accept: 'application/json' }, signal: controller.signal });
       if (!response.ok) throw new Error('Envío no confirmado');
       status.textContent = 'Solicitud enviada. Gracias; nos pondremos en contacto contigo.';
+      if (config.conversionSendTo && typeof window.gtag === 'function') window.gtag('event', 'conversion', { send_to: config.conversionSendTo });
       form.reset();
     } catch {
       status.classList.add('error');
