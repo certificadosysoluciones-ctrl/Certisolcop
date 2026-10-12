@@ -73,9 +73,10 @@
     '.cookie-consent__switch input:checked + span::after{transform:translateX(20px)}' +
     '.cookie-consent__switch input:disabled + span{opacity:.55}' +
     '.cookie-consent__switch input:disabled{cursor:not-allowed}' +
-    '.cookie-consent__fab{position:fixed;right:18px;bottom:18px;z-index:99999;width:46px;height:46px;border-radius:50%;border:0;background:#0369a1;color:#fff;cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 24px rgba(2,12,27,.30)}' +
+    '.cookie-consent__fab{position:fixed;right:89px;bottom:26px;z-index:99999;width:46px;height:46px;border-radius:50%;border:0;background:#0369a1;color:#fff;cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 24px rgba(2,12,27,.30)}' +
     '.cookie-consent__fab svg{width:24px;height:24px}' +
     '.cookie-consent__fab:hover{filter:brightness(1.08)}' +
+    '@media(max-width:640px){.cookie-consent__fab{right:74px;bottom:18px;width:44px;height:44px}}' +
     '@media(max-width:560px){.cookie-consent{right:12px;left:12px;bottom:12px;width:auto}.cookie-consent__actions{flex-wrap:wrap}.cookie-consent__btn{flex:1 1 45%}}';
 
   function injectStyles() {
